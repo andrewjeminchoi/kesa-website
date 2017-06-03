@@ -54,6 +54,63 @@
 	<!-- Font awesome -->
 	<script src="https://use.fontawesome.com/31aead72cf.js"></script>
 
+	<!-- Photo gallery styling #Doesn't work in the CSS for some reason?-->
+	<style>
+	h3 {
+	  font-family: 'Muli', sans-serif; font-size:120%
+	  font-weight: 700;
+	  letter-spacing: 1px;
+	}
+
+	div.gallery {
+		border: 1px solid #ccc;
+	}
+
+	div.gallery:hover {
+		border: 1px solid #777;
+	}
+
+	div.gallery img {
+		width: 100%;
+		height: auto;
+	}
+
+	div.desc {
+		padding: 15px;
+		text-align: center;
+	}
+
+	* {
+		box-sizing: border-box;
+		margin: 0 auto;
+	}
+
+	.responsive {
+		padding: 0 6px;
+		float: center;
+		width: 45.49999%;
+	}
+
+	@media only screen and (max-width: 700px){
+		.responsive {
+			width: 49.99999%;
+			margin: 6px 0;
+		}
+	}
+
+	@media only screen and (max-width: 500px){
+		.responsive {
+			width: 100%;
+		}
+	}
+
+	.clearfix:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	</style>
+
 </head>
 
 <body>
@@ -95,8 +152,19 @@
 		<div class="row">
 			<div class="box">
 				<div class="col-lg-12">
-					<img src="/img/signup_ed.jpg" alt="" style="float:right;width:400x;height:300px;">
-					<p>Korean Engineering Students' Association (KESA) is a recognized student-run organization at the University of Toronto. Founded in 1981, KESA has dedicated itself in promoting Korean culture, excellence in academics, and positive social communication among our members in the Faculty of Engineering.</p>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="https://kesa.skule.ca/aboutus">
+								<img src="/img/signup_ed.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>2017-2018</strong><br/>KESA</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<br/>
+
+					<p align="left" style="font-family: 'Muli', sans-serif; font-size:150%">
+						<strong><abbr title="Korean Engineering Students' Association"> KESA</abbr></strong> is a proudly recognized organization at the University of Toronto. Founded in 1981, KESA has dedicated itself in promoting Korean culture, excellence in academics, and positive social communication among our members in the Faculty of Engineering. </br>
 				</div>
 			</div>
 		</div>
