@@ -59,6 +59,62 @@
 	}
 	</style>
 
+	<!-- Photo gallery styling #Doesn't work in the CSS for some reason?-->
+	<style>
+	h3 {
+	  font-family: 'Muli', sans-serif; font-size:120%
+	  font-weight: 700;
+	  letter-spacing: 1px;
+	}
+
+	div.gallery {
+		border: 1px solid #ccc;
+	}
+
+	div.gallery:hover {
+		border: 1px solid #777;
+	}
+
+	div.gallery img {
+		width: 100%;
+		height: auto;
+	}
+
+	div.desc {
+		padding: 15px;
+		text-align: center;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	.responsive {
+		padding: 0 6px;
+		float: left;
+		width: 24.49999%;
+	}
+
+	@media only screen and (max-width: 700px){
+		.responsive {
+			width: 49.99999%;
+			margin: 6px 0;
+		}
+	}
+
+	@media only screen and (max-width: 500px){
+		.responsive {
+			width: 100%;
+		}
+	}
+
+	.clearfix:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	</style>
+
 </head>
 
 <body>
@@ -111,46 +167,269 @@
 		<div class="box">
 			<div class="col-lg-12">
 				<hr>
-				<h2 class="intro-text text-center" style="font-size:160%;">2016-2017 <strong>KESA</strong> Team</h2>
+				<h2 class="intro-text text-center" style="font-size:160%;">2017-2018 <strong>KESA</strong> Team</h2>
 				<hr>
 			</div>
 			<div class="col-lg-12">
 				<p align="left" style="font-family: 'Muli', sans-serif; font-size:120%">
 					<!-- Executives -->
-					<strong>President: </strong><a href="/aboutus/past/photos/yschoi.gif">Yeon Soo Choi</a><br/>
-					<strong>Vice President: </strong><a href="/aboutus/past/photos/jsyeo.gif">Jun Soo Yeo</a><br/><br/>
+					<h3>Executives</h3>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/dhkang.jpg">
+								<img src="2017_2018/tn/dhkang.jpg" width="300" height="300">
+							</a>
+							<div class="desc"><strong>Dong Ho Kang</strong><br/>President</div>
+						</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/jhkim.jpg">
+								<img src="2017_2018/tn/jhkim.jpg" width="300" height="300">
+							</a>
+							<div class="desc"><strong>Jooho Kim</strong><br/>Vice President</div>
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+
+
 					<!-- Marketing -->
-					<strong>Marketing Director: </strong><a href="/aboutus/past/photos/dhkang.jpg">Dong Ho Kang</a><br/>
-					<strong>Social Media Manager: </strong><a href="/aboutus/past/photos/sjkim.jpg">Sung Joon Kim</a><br/>
-					<strong>Communication Manager: </strong><a href="/aboutus/past/photos/jhhong.gif">Ji Won Hong</a><br/>
-					<strong>Web Developer: </strong><a href="/aboutus/past/photos/hrshim.gif">Hye Ryn Shim</a><br/><br/>
+					<br/>
+					<br/>
+					<br/>
+					<h3>Marketing Department</h3>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/jskim.jpg">
+								<img src="2017_2018/tn/jskim.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Jinsoo Kim</strong><br/>​In-Reach Director</div>
+						</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/mjkim.jpg">
+								<img src="2017_2018/tn/mjkim.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Min Jue Kim</strong><br/>​In-Reach Coordinator</div>
+						</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/eyko.jpg">
+								<img src="2017_2018/tn/eyko.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Eun Young Ko</strong><br/>​In-Reach Coordinator</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+
+					<br/>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/anon.jpg">
+								<img src="2017_2018/tn/anon.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Seung Doo Yang</strong><br/>Out-reach Director</div>
+						</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/anon.jpg">
+								<img src="2017_2018/tn/anon.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Chan Lee</strong><br/>Out-reach Coordinator</div>
+						</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/hklee.jpg">
+								<img src="2017_2018/tn/hklee.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Ha Kyung Lee</strong><br/>Out-reach Coordinator</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+
 					<!-- Academics -->
-					<strong>Academic Director: </strong><a href="/aboutus/past/photos/hikwon.jpg">Hong Il Kwon</a><br/>
-					<strong>Academic Coordinator: </strong><a href="/aboutus/past/photos/yskim.jpg">Yae Seoung Kim</a><br/>
-					<strong>Academic Coordinator: </strong><a href="/aboutus/past/photos/jhkim.jpg">Joo Ho Kim</a><br/>
-					<strong>Academic Coordinator: </strong><a href="/aboutus/past/photos/hjchoi.jpg">Hyung Joo Choi</a><br/><br/>
+					<br/>
+					<br/>
+					<br/>
+					<h3>Academic Department</h3>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/hjchoi.jpg">
+								<img src="2017_2018/tn/hjchoi.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Hyung Joo Choi</strong><br/>Core-8 Director</div>
+						</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/anon.jpg">
+								<img src="2017_2018/tn/anon.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Tongwha Kim</strong><br/>Core-8 Coordinator</div>
+						</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/yhkim.jpg">
+								<img src="2017_2018/tn/yhkim.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Yong Ho Kim</strong><br/>Core-8 Coordinator</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+
+					<br/>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/yskim.jpg">
+								<img src="2017_2018/tn/yskim.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Yae Seoung Kim</strong><br/>EngSci Director</div>
+						</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/anon.jpg">
+								<img src="2017_2018/tn/anon.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Woo Sik Kim</strong><br/>EngSci Coordinator</div>
+						</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/tn/anon.jpg">
+								<img src="2017_2018/tn/anon.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Ji Yeon Lee</strong><br/>EngSci Coordinator</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+
 					<!-- Events -->
-					<strong>Management Director: </strong><a href="/aboutus/past/photos/jhlee.jpg">Joo Hun Lee</a><br/>
-					<strong>Executive Secretary: </strong><a href="/aboutus/past/photos/dejeong.gif">Da Eun Jeong</a><br/>
-					<strong>Event Coordinator: </strong><a href="/aboutus/past/photos/bhahn.gif">Byung Hyo Ahn</a><br/>
-					<strong>Event Coordinator: </strong><a href="/aboutus/past/photos/jykim.gif">Jae Yoon Kim</a><br/>
-					<strong>Event Coordinator: </strong><a href="/aboutus/past/photos/mjkim.jpg">Min Jue Kim</a><br/><br/>
+					<br/>
+					<br/>
+					<br/>
+					<h3>Management Department</h3>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/hrshim.jpg">
+								<img src="2017_2018/tn/hrshim.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Hye Ryn Shim</strong><br/>Management Director</div>
+						</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/hjnoh.jpg">
+								<img src="2017_2018/tn/hjnoh.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Hyeon Jun Noh</strong><br/>Event Coordinator</div>
+						</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/nhlee.jpg">
+								<img src="2017_2018/tn/nhlee.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Na Hyun Lee</strong><br/>Event Coordinator</div>
+						</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/swchung.jpg">
+								<img src="2017_2018/tn/swchung.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Seung Wook Chung</strong><br/>Event Coordinator</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+
 					<!-- Finance -->
-					<strong>Finance Director: </strong><a href="/aboutus/past/photos/dkmin.jpg">Dan Ki Min</a><br/>
-					<strong>Finance Coordinator: </strong><a href="/aboutus/past/photos/jwlim.jpg">Ji Woo Lim</a><br/>
-					<strong>Funding Coordinator: </strong><a href="/aboutus/past/photos/hjkim.jpg">Hyun Jin Kim</a><br/><br/>
+					<br/>
+					<br/>
+					<br/>
+					<h3>Finance Department</h3>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/ynjung.jpg">
+								<img src="2017_2018/tn/ynjung.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Youna Jung</strong><br/>Finance Director</div>
+						</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/tn/anon.jpg">
+								<img src="2017_2018/tn/anon.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Young Kim</strong><br/>Finance Coordinator</div>
+						</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/jhkim2.jpg">
+								<img src="2017_2018/tn/jhkim2.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Jae Hyung Kim</strong><br/>Finance Coordinator</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+
+					<br/>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/tn/anon.jpg">
+								<img src="2017_2018/tn/anon.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Junsoo Park</strong><br/>Finance Coordinator</div>
+						</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/tn/anon.jpg">
+								<img src="2017_2018/tn/anon.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Ji Yeon Lee</strong><br/>Finance Coordinator</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+
 					<!-- IT -->
-					<strong>IT Department Director: </strong><a href="/aboutus/past/photos/hikwon.jpg">Hong Il Kwon</a><br/>
-					<strong>iOS Developer: </strong><a href="/aboutus/past/photos/jhlee.jpg">Joo Hun Lee</a><br/>
-					<strong>iOS Developer: </strong><a href="/aboutus/past/photos/bskim.jpg">Bo Sung Kim</a><br/>
-					<strong>iOS Developer: </strong><a href="/aboutus/past/photos/jwlim.jpg">Ji Woo Lim</a><br/>
-
-					<strong>Android Developer: </strong><a href="/aboutus/past/photos/thlee.jpg">Tai Hyun Lee</a><br/>
-					<strong>Android Developer: </strong><a href="/aboutus/past/photos/sjkim.jpg">Sung Joon Kim</a><br/>
-					<strong>Android Developer: </strong><a href="/aboutus/past/photos/hjkim.jpg">Hyun Jin Kim</a><br/>
-					<strong>Android Developer: </strong><a href="/aboutus/past/photos/dkmin.jpg">Dan Ki Min</a><br/><br/>
-
-
+					<br/>
+					<br/>
+					<br/>
+					<h3>IT Department</h3>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/jmchoi.jpg">
+								<img src="2017_2018/tn/jmchoi.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Jemin Choi</strong><br/>Webmaster</div>
+						</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/bjkim.jpg">
+								<img src="2017_2018/tn/bjkim.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Byung Jun Kim</strong><br/>IT Developer</div>
+						</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="2017_2018/swchung.jpg">
+								<img src="2017_2018/tn/swchung.jpg" width="300" height="200">
+							</a>
+							<div class="desc"><strong>Seung Wook Chung</strong><br/>IT Developer</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<br/>
 				</p>
 			</div>
 			<div class="clearfix"></div>
@@ -166,11 +445,16 @@
 				<h2 class="intro-text text-center" style="font-size:160%;"><strong>Past KESA Executives</strong></h2>
 				<hr>
 			</div>
-			<div class="col-lg-12">
-				<p align="left" style="font-family: 'Muli', sans-serif; font-size:120%">
-					<a href="/aboutus/past/2016_2017"><strong>2016-2017 Team</strong></a></br>
-				</p>
+			<br/>
+			<div class="responsive">
+				<div class="gallery">
+					<a target="_blank" href="https://kesa.skule.ca/aboutus/past/2016_2017">
+						<img src="year_tn/2016-2017.jpg" width="300" height="200">
+					</a>
+					<div class="desc"><strong>2016-2017</strong><br/>Team</div>
+				</div>
 			</div>
+			<div class="clearfix"></div>
 			<div class="clearfix"></div>
 		</div>
 	</div>
