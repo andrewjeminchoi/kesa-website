@@ -1,140 +1,113 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 	<!-- Google Analytics code -->
 	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-		ga('create', 'UA-99102895-1', 'auto');
-		ga('send', 'pageview');
-
+	ga('create', 'UA-99102895-1', 'auto');
+	ga('send', 'pageview');
 	</script>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<!-- Metadata -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="KESA Website - site for pictures, past events and people involved with the University of Toronto (UofT) Korean Engineering Students' Association (KESA).">
+	<meta name="author" content="Jemin Choi, ECE1T8">
 
 
-    <title>University of Toronto Korean Engineering Students' Association (KESA)</title>
+	<!-- Website title -->
+	<title>University of Toronto Korean Engineering Students' Association (KESA)</title>
 
 
-    <!-- Bootstrap Core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap Core CSS -->
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="/css/business-casual.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="/css/business-casual.css" rel="stylesheet">
 
-    <!-- Fonts -->
-    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="/text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="/text/css">
-    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="/text/css">
+	<!-- Fonts -->
+	<link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="/text/css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="/text/css">
+	<link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="/text/css">
 
 	<!-- Some more fonts from me ;) -->
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 
-	<!-- font-family: 'Muli', sans-serif; -->
+	<!-- Use: font-family: 'Muli', sans-serif; -->
 	<link href="https://fonts.googleapis.com/css?family=Muli:200" rel="stylesheet">
 
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
 
 	<!-- Font awesome -->
 	<script src="https://use.fontawesome.com/31aead72cf.js"></script>
 
-	<!-- Custom styles -->
+	<!-- Photo gallery styling #Doesn't work in the CSS for some reason?-->
 	<style>
-	.kesa-title {
-        display: inherit;
-        margin: 0;
-        padding: 80px 0 10px;
-        text-align: center;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        font-family: 'Muli', sans-serif;
-				font-size: 5em;
-        font-weight: 700;
-        line-height: normal;
-        color: #000;
-    }
+	h3 {
+	  font-family: 'Muli', sans-serif; font-size:120%
+	  font-weight: 700;
+	  letter-spacing: 1px;
+	}
+
+	div.gallery {
+		border: 1px solid #ccc;
+	}
+
+	div.gallery:hover {
+		border: 1px solid #777;
+	}
+
+	div.gallery img {
+		width: 100%;
+		height: auto;
+	}
+
+	div.desc {
+		padding: 15px;
+		text-align: center;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	.responsive {
+		padding: 0 6px;
+		float: left;
+		width: 24.99999%;
+	}
+
+	@media only screen and (max-width: 700px){
+		.responsive {
+			width: 49.99999%;
+			margin: 6px 0;
+		}
+	}
+
+	@media only screen and (max-width: 500px){
+		.responsive {
+			width: 100%;
+		}
+	}
+
+	.clearfix:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 	</style>
 
-
-
-	<!-- Top menu navigation bar-->
-	<style>
-	body {margin:0;}
-
-	.topnav {
-	  overflow: hidden;
-	  background-color: #333;
-	  box-shadow:0 0 18px rgba(0,0,0,0.8);
-	  font-family: 'Muli', sans-serif;
-	  //position: fixed;
-	  z-index: 1;
-
-	}
-
-	.topnav a {
-	  float: left;
-	  display: block;
-	  color: #f2f2f2;
-	  text-align: center;
-	  padding: 14px 16px;
-	  text-decoration: none;
-	  font-size: 25px;
-	  border-bottom: inset;
-	}
-
-	.topnav a:hover {
-	  background-color: #ddd;
-	  color: black;
-	}
-
-	.topnav a.active {
-	  background-color: #99ccff;
-	  color: white;
-	}
-
-	.topnav .icon {
-	  display: none;
-	}
-
-	@media screen and (max-width: 600px) {
-	  .topnav a:not(:first-child) {display: none;}
-	  .topnav a.icon {
-		float: right;
-		display: block;
-	  }
-	}
-
-	@media screen and (max-width: 600px) {
-	  .topnav.responsive {position: relative;}
-	  .topnav.responsive .icon {
-		position: absolute;
-		right: 0;
-		top: 0;
-	  }
-	  .topnav.responsive a {
-		float: none;
-		display: block;
-		text-align: left;
-	  }
-
-	}
-	</style>
 </head>
 
 <body>
@@ -143,123 +116,323 @@
 		<a class="active" href="http://kesa.skule.ca">KESA</a>
 		<a href="http://kesa.skule.ca/aboutus">About Us</a>
 		<a href="http://kesa.skule.ca/events">Events</a>
-		<a href="http://kesa.skule.ca/contact">Contact</a>
+		<a href="http://kesa.skule.ca/photogallery">Photos</a>
 		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 	</div>
 	<!-- End of Menu bar for navigation-->
 
 	<!-- Website Title -->
-  <br/>
+	<br/>
 
-    <div class="container">
+	<div class="container">
 		<!-- Meet the team -->
-			<div class="row">
+		<div class="row">
 
-				<div class="box">
-						<div class="col-lg-12">
-								<hr>
-									<h2 class="intro-text text-center" style="font-size:160%;">2016-2017 <strong>KESA</strong> Team</h2>
-								<hr>
+			<div class="box">
+				<div class="col-lg-12">
+					<hr>
+					<h2 class="intro-text text-center" style="font-size:160%;">2016-2017 <strong>KESA</strong> Team</h2>
+					<hr>
+				</div>
+				<div class="col-lg-12">
+					<p align="left" style="font-family: 'Muli', sans-serif; font-size:120%">
+						<!-- Executives -->
+						<h3>Executives</h3>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/yschoi.gif">
+									<img src="/aboutus/past/photos/tn/yschoi.gif" width="300" height="300">
+								</a>
+								<div class="desc"><strong>Yeon Soo Choi</strong><br/>President</div>
+							</div>
 						</div>
-						<div class="col-lg-12">
-								<p align="left" style="font-family: 'Muli', sans-serif; font-size:120%">
-												<!-- Executives -->
-												<strong>President: </strong><a href="/aboutus/past/photos/yschoi.gif">Yeon Soo Choi</a><br/>
-												<strong>Vice President: </strong><a href="/aboutus/past/photos/jsyeo.gif">Jun Soo Yeo</a><br/><br/>
-												<!-- Marketing -->
-												<strong>Marketing Director: </strong><a href="/aboutus/past/photos/dhkang.jpg">Dong Ho Kang</a><br/>
-												<strong>Social Media Manager: </strong><a href="/aboutus/past/photos/sjkim.jpg">Sung Joon Kim</a><br/>
-												<strong>Communication Manager: </strong><a href="/aboutus/past/photos/jhhong.gif">Ji Won Hong</a><br/>
-												<strong>Web Developer: </strong><a href="/aboutus/past/photos/hrshim.gif">Hye Ryn Shim</a><br/><br/>
-												<!-- Academics -->
-												<strong>Academic Director: </strong><a href="/aboutus/past/photos/hikwon.jpg">Hong Il Kwon</a><br/>
-												<strong>Academic Coordinator: </strong><a href="/aboutus/past/photos/yskim.jpg">Yae Seoung Kim</a><br/>
-												<strong>Academic Coordinator: </strong><a href="/aboutus/past/photos/jhkim.jpg">Joo Ho Kim</a><br/>
-												<strong>Academic Coordinator: </strong><a href="/aboutus/past/photos/hjchoi.jpg">Hyung Joo Choi</a><br/><br/>
-												<!-- Events -->
-												<strong>Management Director: </strong><a href="/aboutus/past/photos/jhlee.jpg">Joo Hun Lee</a><br/>
-												<strong>Executive Secretary: </strong><a href="/aboutus/past/photos/dejeong.gif">Da Eun Jeong</a><br/>
-												<strong>Event Coordinator: </strong><a href="/aboutus/past/photos/bhahn.gif">Byung Hyo Ahn</a><br/>
-												<strong>Event Coordinator: </strong><a href="/aboutus/past/photos/jykim.gif">Jae Yoon Kim</a><br/>
-												<strong>Event Coordinator: </strong><a href="/aboutus/past/photos/mjkim.jpg">Min Jue Kim</a><br/><br/>
-												<!-- Finance -->
-												<strong>Finance Director: </strong><a href="/aboutus/past/photos/dkmin.jpg">Dan Ki Min</a><br/>
-												<strong>Finance Coordinator: </strong><a href="/aboutus/past/photos/jwlim.jpg">Ji Woo Lim</a><br/>
-												<strong>Funding Coordinator: </strong><a href="/aboutus/past/photos/hjkim.jpg">Hyun Jin Kim</a><br/><br/>
-												<!-- IT -->
-												<strong>IT Department Director: </strong><a href="/aboutus/past/photos/hikwon.jpg">Hong Il Kwon</a><br/>
-												<strong>iOS Developer: </strong><a href="/aboutus/past/photos/jhlee.jpg">Joo Hun Lee</a><br/>
-												<strong>iOS Developer: </strong><a href="/aboutus/past/photos/bskim.jpg">Bo Sung Kim</a><br/>
-												<strong>iOS Developer: </strong><a href="/aboutus/past/photos/jwlim.jpg">Ji Woo Lim</a><br/>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/jsyeo.gif">
+									<img src="/aboutus/past/photos/tn/jsyeo.gif" width="300" height="300">
+								</a>
+								<div class="desc"><strong>Jun Soo Yeo</strong><br/>Vice President</div>
+							</div>
+						</div>
 
-												<strong>Android Developer: </strong><a href="/aboutus/past/photos/thlee.jpg">Tai Hyun Lee</a><br/>
-												<strong>Android Developer: </strong><a href="/aboutus/past/photos/sjkim.jpg">Sung Joon Kim</a><br/>
-												<strong>Android Developer: </strong><a href="/aboutus/past/photos/hjkim.jpg">Hyun Jin Kim</a><br/>
-												<strong>Android Developer: </strong><a href="/aboutus/past/photos/dkmin.jpg">Dan Ki Min</a><br/><br/>
+						<div class="clearfix"></div>
 
 
-								</p>
+						<!-- Marketing -->
+						<br/>
+						<br/>
+						<br/>
+						<h3>Marketing Department</h3>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/dhkang.jpg">
+									<img src="/aboutus/past/photos/tn/dhkang.jpg" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Dong Ho Kang</strong><br/>Marketing Director</div>
+							</div>
+						</div>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/sjkim.jpg">
+									<img src="/aboutus/past/photos/tn/sjkim.jpg" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Sung Joon Kim</strong><br/>Social Media Manager</div>
+							</div>
+						</div>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/jhhong.gif">
+									<img src="/aboutus/past/photos/tn/jhhong.gif" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Ji Won Hong</strong><br/>Communication Manager</div>
+							</div>
+						</div>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/hrshim.gif">
+									<img src="/aboutus/past/photos/tn/hrshim.gif" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Hye Ryn Shim</strong><br/>Web Developer</div>
+							</div>
+						</div>
+
+						<div class="clearfix"></div>
+
+						<!-- Academics -->
+						<br/>
+						<br/>
+						<br/>
+						<h3>Academic Department</h3>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/hikwon.jpg">
+									<img src="/aboutus/past/photos/tn/hikwon.jpg" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Hong Il Kwon</strong><br/>Academic Director</div>
+							</div>
+						</div>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/yskim.jpg">
+									<img src="/aboutus/past/photos/tn/yskim.jpg" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Yae Seoung Kim</strong><br/>Academic Coordinator</div>
+							</div>
+						</div>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/jhkim.jpg">
+									<img src="/aboutus/past/photos/tn/jhkim.jpg" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Joo Ho Kim</strong><br/>Academic Coordinator</div>
+							</div>
+						</div>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/hjchoi.jpg">
+									<img src="/aboutus/past/photos/tn/hjchoi.jpg" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Hyung Joo Choi</strong><br/>Academic Coordinators</div>
+							</div>
+						</div>
+
+						<div class="clearfix"></div>
+
+						<!-- Events -->
+						<br/>
+						<br/>
+						<br/>
+						<h3>Management Department</h3>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/jhlee.jpg">
+									<img src="/aboutus/past/photos/tn/jhlee.jpg" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Joo Hun Lee</strong><br/>Management Director</div>
+							</div>
+						</div>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/dejeong.gif">
+									<img src="/aboutus/past/photos/tn/dejeong.gif" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Da Eun Jeong</strong><br/>Executive Secretary</div>
+							</div>
+						</div>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/bhahn.gif">
+									<img src="/aboutus/past/photos/tn/bhahn.gif" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Byung Hyo Ahn</strong><br/>Event Coordinator</div>
+							</div>
 						</div>
 						<div class="clearfix"></div>
+
+						<br/>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/jykim.gif">
+									<img src="/aboutus/past/photos/tn/jykim.gif" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Jae Yun Kim</strong><br/>Event Coordinator</div>
+							</div>
+						</div>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/mjkim.jpg">
+									<img src="/aboutus/past/photos/tn/mjkim.jpg" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Min Jue Kim</strong><br/>Event Coordinator</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+
+						<!-- Finance -->
+						<br/>
+						<br/>
+						<br/>
+						<h3>Finance Department</h3>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/dkmin.jpg">
+									<img src="/aboutus/past/photos/tn/dkmin.jpg" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Dan Kee Min</strong><br/>Finance Director</div>
+							</div>
+						</div>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/jwlim.jpg">
+									<img src="/aboutus/past/photos/tn/jwlim.jpg" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Ji Woo Lim</strong><br/>Finance Coordinator</div>
+							</div>
+						</div>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/hjkim.jpg">
+									<img src="/aboutus/past/photos/tn/hjkim.jpg" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Hyun Jin Kim</strong><br/>Finance Coordinator</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+
+						<!-- IT -->
+						<br/>
+						<br/>
+						<br/>
+						<h3>IT Department</h3>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/hikwon.jpg">
+									<img src="/aboutus/past/photos/tn/hikwon.jpg" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Hong Il Kwon</strong><br/>IT Department Director</div>
+							</div>
+						</div>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/jhlee.jpg">
+									<img src="/aboutus/past/photos/tn/jhlee.jpg" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Joo Hun Lee</strong><br/>iOS Developer</div>
+							</div>
+						</div>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/bskim.jpg">
+									<img src="/aboutus/past/photos/tn/bskim.jpg" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Bo Sung Kim</strong><br/>iOS Developer</div>
+							</div>
+						</div>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/jwlim.jpg">
+									<img src="/aboutus/past/photos/tn/jwlim.jpg" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Ji Woo Lim</strong><br/>iOS Developer</div>
+							</div>
+						</div>
+
+						<div class="clearfix"></div>
+
+						<br/>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/thlee.jpg">
+									<img src="/aboutus/past/photos/tn/thlee.jpg" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Tai Hyun Lee</strong><br/>Android Developer</div>
+							</div>
+						</div>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/sjkim.jpg">
+									<img src="/aboutus/past/photos/tn/sjkim.jpg" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Sung Joon Kim</strong><br/>Android Developer</div>
+							</div>
+						</div>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/hjkim.jpg">
+									<img src="/aboutus/past/photos/tn/hjkim.jpg" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Hyun Jin Kim</strong><br/>Android Developer</div>
+							</div>
+						</div>
+						<div class="responsive">
+							<div class="gallery">
+								<a target="_blank" href="/aboutus/past/photos/dkmin.jpg">
+									<img src="/aboutus/past/photos/tn/dkmin.jpg" width="300" height="200">
+								</a>
+								<div class="desc"><strong>Dan Kee Min</strong><br/>Android Developer</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</p>
 				</div>
+				<div class="clearfix"></div>
 			</div>
 		</div>
+	</div>
+
 	<!-- Responsive side bar -->
-	<script>
-	function myFunction() {
-		var x = document.getElementById("myTopnav");
-		if (x.className === "topnav") {
-			x.className += " responsive";
-		} else {
-			x.className = "topnav";
-		}
+	<script src="/js/navBar.js"></script>
+
+	<!-- jQuery -->
+	<script src="/js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="/js/bootstrap.min.js"></script>
+
+	<!-- Analytics script -->
+	<script src="/js/analytics.js"></script>
+
+
+	<script type="application/ld+json">
+	{
+		"@context" : "http://schema.org",
+		"@type" : "Organization",
+
+
+		"name" : "UTKESA",
+
+
+
+		"url" : "http:\/\/kesa.skule.ca",
+
+
+
+		"sameAs" : [ "https:\/\/www.facebook.com\/groups\/112791958804537\/",         ]
+
+
+
 	}
 	</script>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-
-    <script type="/text/javascript">
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-99099846-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script');
-        ga.type = '/text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
-
-
-    <script type="application/ld+json">
-    {
-      "@context" : "http://schema.org",
-      "@type" : "Organization",
-
-
-      "name" : "UTKESA",
-
-
-
-      "url" : "http:\/\/kesa.skule.ca",
-
-
-
-      "sameAs" : [ "https:\/\/www.facebook.com\/groups\/112791958804537\/",         ]
-
-
-
-    }
-</script>
 
 </body>
 
